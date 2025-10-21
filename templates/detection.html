@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả truy xuất</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Kết quả truy xuất</h1>
+        <div class="box">
+            <div class="image-results">
+            <div class="image-block">
+                <h3>Ảnh gốc</h3>
+                <img src="{{ url_for('img') }}" alt="Original Image">
+            </div>
+
+            <div class="image-block">
+                <h3>Phát hiện vệt lốp xe</h3>
+                <img src="{{ url_for('load_img') }}" alt="Processed Image">
+            </div>
+
+            <div class="results-block">
+                <h3>Các mẫu lốp xe có khả năng</h3>
+                <ul>
+                    {% for label, score in matched_results %}
+                        <li>{{ label }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="upload-btn">
+            <a href="/" class="btn">Tiếp tục với ảnh khác</a>
+        </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    background-color: #e6f0ff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-top: 30px;
+}
+
+.box {
+    background-color: #75b1da;
+    padding: 30px;
+    margin: 10px auto;
+    width: 95%;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex box cho ảnh và kết quả */
+.image-results {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Cột ảnh và kết quả */
+.image-block,
+.results-block {
+    width: 30%;
+    text-align: center;
+}
+
+/* Ảnh hiển thị */
+.image-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Danh sách kết quả */
+.results-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.results-block li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+/* Nút upload căn giữa */
+.upload-btn {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.box-1 {
+    background-color: #75b1da;
+    padding: 30px;
+    margin: 10px auto;
+    width: 95%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+.btn-1 {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+.upload-form {
+    display: flex;
+    flex-direction: column;  /* 👉 Các thành phần dọc xuống */
+    align-items: center;     /* 👉 Căn giữa theo chiều ngang */
+    gap: 20px;               /* 👉 Khoảng cách giữa 2 dòng */
+    margin-top: 10px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link href="static/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">PHẦN MỀM<br>HỖ TRỢ TRUY XUẤT MẪU LỐP XE</h2>
+        <div class="box-1">
+            <form method="POST" action="{{ url_for('home') }}" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="image" class="btn-1">
+            <input type="submit" value="Gửi" class="btn-1 submit-btn">
+        </form>
+        </div>
+        
+    </div>
+</body>
+</html>
