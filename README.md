@@ -1,1 +1,1 @@
-weight và vecto embedding của mô hình ở phần release
+weight và vector embedding của mô hình ở phần release
